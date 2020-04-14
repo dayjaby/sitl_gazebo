@@ -35,7 +35,7 @@ find_program(px4 REQUIRED)
 # Note: If using catkin, Python 2 is found since it points
 # to the Python libs installed with the ROS distro
 if (NOT CATKIN_DEVEL_PREFIX)
-	find_package(PythonInterp 3 REQUIRED)
+	find_package(PythonInterp REQUIRED)
 else()
 	find_package(PythonInterp REQUIRED)
 endif()
